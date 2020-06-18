@@ -3,6 +3,7 @@
     include(__DIR__ . '/inc/contactPost.php');
 ?>
 <!-- contact php -->
+
 <!DOCTYPE html>
 
 <html>
@@ -16,8 +17,6 @@
 
 <body>
 <div class="title">Contact Form</div>    
-<a href="/login.php" class="login">Login</a>
-<a href="/signup.php" class="signup">Signup</a>
 <div class="contact-form-container">
     <div class="form-container">
         <div class="form">
@@ -66,7 +65,15 @@
     </div><!-- form container -->
 </div> <!-- contact form container -->
 
-
+<div class="contacts">
+    <div class="contacts-container">
+        <!-- Contacts Database -->   
+        <?php
+        include(__DIR__ . '/inc/contactsDB.php');
+        ?>
+        <!-- Contacts Database --> 
+    </div>
+</div>
 
 </div>
 </body>
